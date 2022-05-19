@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark outline-warning">
+        <div className="container-fluid" >
             <Link className="navbar-brand" to='/'>AI Word</Link>
             <button className="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -14,10 +14,10 @@ export default function Navbar() {
                     <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to='/'>Home</Link>           
                     </li>
-                    {/* <li className="nav-item">
-                        <Link className="nav-link" to="/animenews">Anime News</Link>
+                     <li className="nav-item">
+                        <Link className="nav-link" to="/chatai">Chat AI</Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link className="nav-link" to="/moviesnews">Movies News</Link>
                     </li> */}
                     <li className="nav-item dropdown">
@@ -27,15 +27,15 @@ export default function Navbar() {
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><Link className="dropdown-item" to='/about'>About</Link></li>
                             <li><Link className="dropdown-item" to='/contactme'>Contact Me</Link></li>
-                            <li><hr className="dropdown-divider" /></li>
-                            <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                            {/* <li><hr className="dropdown-divider" /></li> */}
+                            {/* <li><Link className="dropdown-item" to="#">Something else here</Link></li> */}
                         </ul>
                     </li>
                 </ul>
-                <form className="d-flex">
+                {/* <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> */}
             </div>
         </div>
     </nav>

@@ -10,7 +10,7 @@ const AppRouter = () => {
 
     return(
         <Router>
-            <div className='cotainer-fliud'>
+            <div className='cotainer-fliud vh-100'>
                 <Navbar />
                 <Routes>
                 {routes.map(({ Element, key, path }) => (
